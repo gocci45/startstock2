@@ -3,7 +3,7 @@
   <%= render "tops/header" %>
 
   <aside>
-        <div id="sidebar" class="nav-collapse ">
+        <div id="sidebar" class="col-md-3 col-xl-2 bd-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="profile.html"></a></p>
@@ -11,14 +11,13 @@
               <%= current_user.name %>
             </h5>
             <li class="mt">
-              <%= link_to "トップページ" ,root_path ,class: 'active' %>
-                <i class="fa fa-dashboard"></i>
+              <%= link_to "トップページ" ,root_path ,class: 'btn btn-outline-secondary' %>
             </li>
             <li class="sub-menu">
   
                   <i class="fa fa-desktop">
                     <span>
-                      <%= link_to "入庫処理" ,new_top_path %>
+                      <%= link_to "入庫処理" ,new_top_path,class: 'btn btn-outline-secondary' %>
                     </span>
                   </i>
           </ul>
