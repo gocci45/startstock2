@@ -13,7 +13,7 @@ RSpec.describe Item, type: :model do
     it '商品名が空欄だと保存できない' do
       @item.itemname_id = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Itemname can't be blank")
+      expect(@item.errors.full_messages).to include("Itemnameを入力してください")
     end
 
     it '商品名の情報が横棒だと保存されない' do
@@ -25,7 +25,7 @@ RSpec.describe Item, type: :model do
     it 'メーカーが空欄だと保存できない' do
       @item.maker_id = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Maker can't be blank")
+      expect(@item.errors.full_messages).to include("Makerを入力してください")
     end
 
     it 'メーカーの情報が横棒だと保存されない' do
@@ -37,7 +37,7 @@ RSpec.describe Item, type: :model do
     it 'カテゴリーの情報が空欄だと保存できない' do
       @item.category_id = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Category can't be blank")
+      expect(@item.errors.full_messages).to include("Categoryを入力してください")
     end
 
     it 'カテゴリーの情報が横棒だと保存されない' do
@@ -49,7 +49,7 @@ RSpec.describe Item, type: :model do
     it '倉庫の情報が空欄だと保存できない' do
       @item.souko_id = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Souko can't be blank")
+      expect(@item.errors.full_messages).to include("Soukoを入力してください")
     end
 
     it '倉庫の情報が横棒だと保存されない' do
@@ -61,7 +61,7 @@ RSpec.describe Item, type: :model do
     it '単位の情報が空欄だと保存できない' do
       @item.kt_gl_id = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Kt gl can't be blank")
+      expect(@item.errors.full_messages).to include("Kt glを入力してください")
     end
 
     it '単位の情報が横棒だと保存されない' do
@@ -73,7 +73,7 @@ RSpec.describe Item, type: :model do
     it '個数の情報が空欄だと保存できない' do
       @item.stock = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("Stock can't be blank")
+      expect(@item.errors.full_messages).to include("Stockを入力してください")
     end
 
     it '個数の情報が全角数字だと保存されない' do
@@ -91,7 +91,7 @@ RSpec.describe Item, type: :model do
     it 'userが紐づいていないと保存できない'do
       @item.user = nil
       @item.valid?
-      expect(@item.errors.full_messages).to include("User must exist")
+      expect(@item.errors.full_messages).to include("Userを入力してください")
     end
   end
 end

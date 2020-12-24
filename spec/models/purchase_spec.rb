@@ -13,7 +13,7 @@ RSpec.describe Purchase, type: :model do
     it '商品名が空欄だと保存できない' do
       @purchase.itemname_id = nil
       @purchase.valid?
-      expect(@purchase.errors.full_messages).to include("Itemname can't be blank")
+      expect(@purchase.errors.full_messages).to include("Itemnameを入力してください")
     end
 
     it '商品名の情報が横棒だと保存されない' do
@@ -25,13 +25,13 @@ RSpec.describe Purchase, type: :model do
     it '個数が空欄だと保存できない' do
       @purchase.buy_stock = nil
       @purchase.valid?
-      expect(@purchase.errors.full_messages).to include("Buy stock can't be blank")
+      expect(@purchase.errors.full_messages).to include("Buy stockを入力してください")
     end
 
     it 'userが紐づいていないと保存できない'do
       @purchase.user = nil
       @purchase.valid?
-      expect(@purchase.errors.full_messages).to include("User must exist")
+      expect(@purchase.errors.full_messages).to include("Userを入力してください")
     end
   end
 end
