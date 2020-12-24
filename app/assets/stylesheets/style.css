@@ -6754,6 +6754,11 @@ button.close {
   background-color: #122b40;
 }
 
-.sidebar-toggle-box {
-  background-color: #122b40;
+.bd-sidebar {
+  height: 100%;
+}
+
+.actions {
+  border: 1px,solid,gray;
+  margin-top: 20px;
 }

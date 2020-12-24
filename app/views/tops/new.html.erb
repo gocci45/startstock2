@@ -3,13 +3,9 @@
   <%= render "header" %>
 
   <aside class="main-sidebar">
-        <div id="sidebar" class="col-xs-3 col-xs-2 sidebar">
+        <div id="sidebar" class="bd-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav nav-sidebar">
-            <p class="centered"><a href="profile.html"></a></p>
-            <h5 class="centered">
-              <%= current_user.name %>
-            </h5>
             <li class="mt">
               <%= link_to "トップページ" ,root_path ,class: 'btn btn-outline-secondary' %>
             </li>
