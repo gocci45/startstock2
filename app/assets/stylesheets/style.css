@@ -2624,6 +2624,7 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
+  text-align: center;
 }
 .radio,
 .checkbox {
@@ -4271,6 +4272,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -6761,4 +6763,8 @@ button.close {
 .actions {
   border: 1px,solid,gray;
   margin-top: 20px;
+}
+
+.form-wrap {
+  text-align: center;
 }

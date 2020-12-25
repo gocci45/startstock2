@@ -135,15 +135,8 @@
                           
                           <% if a == d %>
                             <%= b - c %>
-                          <% else %>
-                            <%= b %>
-                          <% end %>
-
-                          <% if d.nil? %>
-                            <%= b %>
                           <% end %>
                         <% end %>
-                        
                         </td>
                         <td>
                         <%= link_to '出庫', top_purchases_path(item[0]) ,class:"btn btn-warning"%>
