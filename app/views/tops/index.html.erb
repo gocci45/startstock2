@@ -134,8 +134,13 @@
                           <% end %>
                           
                           <% if a == d %>
-                            <%= b - c %>
+                            <%= (b - c) %>
+                            <% break %>
+                          <% else %>
+                            <%= b %>
+                            <% break %>
                           <% end %>
+
                         <% end %>
                         </td>
                         <td>
