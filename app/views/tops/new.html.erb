@@ -1,19 +1,20 @@
 <section id="container">
 
   <%= render "header" %>
-
+<main>
+<div class="blocka">
   <aside class="main-sidebar">
         <div id="sidebar" class="bd-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav nav-sidebar">
             <li class="mt">
-              <%= link_to "トップページ" ,root_path ,class: 'btn btn-outline-secondary' %>
+              <%= link_to "トップページ" ,root_path ,class: 'btn btn-outline-light' %>
             </li>
             <li class="sub-menu">
   
                   <i class="fa fa-desktop">
                     <span>
-                      <%= link_to "入庫処理" ,new_top_path,class: 'btn btn-outline-secondary' %>
+                      <%= link_to "入庫処理" ,new_top_path,class: 'btn btn-outline-light' %>
                     </span>
                   </i>
             </li>
@@ -21,10 +22,11 @@
           <!-- sidebar menu end-->
         </div>
       </aside>
+</div>
       <!--sidebar end-->
 
     <!--main content start-->
-    
+<div class="blockb">
     <section id="main-content">
       <section class="wrapper">
         <h3><i class="fa fa-angle-right"></i> 入庫処理</h3>
@@ -46,7 +48,6 @@
                   <label class="col-sm-2 col-sm-2 control-label">対象メーカー</label>
                   <div class="col-sm-10">
                     <%= f.collection_select(:maker_id, Maker.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
-                    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
                   </div>
                 </div>
                 <div class="form-group">
@@ -80,13 +81,6 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-lg-2 col-sm-2 control-label">入庫処理でお困りはこちらまで</label>
-                  <div class="col-lg-10">
-                    <p class="form-control-static">sample_yamada_email@example.com</p>
-                    <p class="form-control-static">  担当：山田</p>
-                  </div>
-                </div>
-                <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">入庫</label>
                   <div class="col-sm-10">
                     <%= f.submit "入庫する" ,class: "btn btn-primary btn-block" %>
@@ -108,6 +102,8 @@
     <!-- /MAIN CONTENT -->
     <!--main content end-->
   </section>
+</div>
+</main>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>

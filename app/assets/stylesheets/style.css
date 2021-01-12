@@ -234,6 +234,7 @@ th {
   }
   .navbar {
     display: none;
+    height: 10%;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1580,6 +1581,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  height: 100vh;
 }
 @media (min-width: 768px) {
   .container {
@@ -3625,7 +3627,7 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
@@ -4491,6 +4493,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  margin: 0%;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -6768,3 +6771,32 @@ button.close {
 .form-wrap {
   text-align: center;
 }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  margin-top: 0px;
+}
+
+div.blocka {
+  width: 300px;
+  text-align: center;
+  background-color: #888;
+  color: black;
+}
+
+div.blockb {
+  flex: 1;
+  margin-left: 10px;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
